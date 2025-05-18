@@ -21,16 +21,16 @@ public class ElementPage {
     @FindBy(xpath = "//span[text()='Dynamic Properties']")      private WebElement dynamicPropertiesOption;
 
     // Text Box Elements
-    @FindBy(id = "userName")                    private WebElement fullNameBox;
-    @FindBy(id = "userEmail")                   private WebElement emailBox;
-    @FindBy(css = "textarea#currentAddress")    private WebElement currentAddressBox;
-    @FindBy(css = "textarea#permanentAddress")  private WebElement permanentAddressBox;
-    @FindBy(id = "submit")                      private WebElement submitButton;
+    @FindBy(id = "userName")                    public WebElement fullNameBox;
+    @FindBy(id = "userEmail")                   public WebElement emailBox;
+    @FindBy(css = "textarea#currentAddress")    public WebElement currentAddressBox;
+    @FindBy(css = "textarea#permanentAddress")  public WebElement permanentAddressBox;
+    @FindBy(id = "submit")                      public WebElement submitButton;
 
-    @FindBy(id = "name")                 private WebElement nameMessage;
-    @FindBy(id = "email")                private WebElement emailMessage;
-    @FindBy(css = "p#currentAddress")    private WebElement currentAddressMessage;
-    @FindBy(css = "p#permanentAddress")  private WebElement permanentAddressMessage;
+    @FindBy(id = "name")                 public WebElement nameMessage;
+    @FindBy(id = "email")                public WebElement emailMessage;
+    @FindBy(css = "p#currentAddress")    public WebElement currentAddressMessage;
+    @FindBy(css = "p#permanentAddress")  public WebElement permanentAddressMessage;
 
     // Check Box Elements
     @FindBy(css = ".rct-checkbox")        private WebElement checkBox;
@@ -91,6 +91,10 @@ public class ElementPage {
     /** Navega a la pestaña Elements */
     public void gotoElements() {
         driver.get(BASE_URL + "/elements");
+    }
+
+    public void clickTextBoxOption(){
+        textBoxOption.click();
     }
 
 }
