@@ -17,10 +17,10 @@ public class FirstTest {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
-     @Test
-     public void test1(){
-            driver.get("https://www.youtube.com/watch?v=QQliGCtqD2w&t=879s");
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-            driver.quit();
-        }
+    @Test
+    public void test1(){
+        driver.get("https://www.youtube.com/watch?v=QQliGCtqD2w&t=879s");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.quit();
+    }
 }
