@@ -34,6 +34,45 @@ public class AlertsWindowPage {
     @FindBy(xpath = "//*[text()='Message Window']")
     private WebElement messageWindowOption;
 
+    // Alerts Elements
+    @FindBy(xpath = "//*[text()='Alerts']")
+    private WebElement alertTitle;
+
+    @FindBy(xpath = "//*[text()='Alert Box']")
+    private WebElement alertBoxOption;
+
+    @FindBy(xpath = "//*[text()='Confirm Box']")
+    private WebElement confirmBoxOption;
+
+    @FindBy(xpath = "//*[text()='Prompt Box']")
+    private WebElement promptBoxOption;
+
+    // Frames Elements
+    @FindBy(xpath = "//*[text()='Frames']")
+    private WebElement frameTitle;
+
+    // Nested Frames Elements
+    @FindBy(xpath = "//*[text()='Nested Frames']")
+    private WebElement nestedFrameTitle;
+
+    // Modal Dialogs Elements
+    @FindBy(xpath = "//*[text()='Modal Dialogs']")
+    private WebElement modalDialogTitle;
+
+    @FindBy(xpath = "//*[text()='Modal Dialogs']")
+    private WebElement modalTitle;
+
+    @FindBy(id = "showSmallModal")
+    private WebElement smallModal;
+
+    @FindBy(id = "showLargeModal")
+    private WebElement largeModal;
+
+    @FindBy(id = "closeSmallModal")
+    private WebElement closeSmallModalButton;
+
+    @FindBy(id = "closeLargeModal")
+    private WebElement closeLargeModalButton;
 
     // Constructor
     public AlertsWindowPage(WebDriver driver) {
