@@ -21,6 +21,19 @@ public class AlertsWindowPage {
     @FindBy(xpath = "//*[text()='Modal Dialogs']")
     private WebElement modalDialogsOption;
 
+    // Browser Windows Elements
+    @FindBy(xpath = "//*[text()='Browser Windows']")
+    private WebElement browserTitle;
+
+    @FindBy(xpath = "//*[text()='New Tab']")
+    private WebElement newTabOption;
+
+    @FindBy(xpath = "//*[text()='New Window']")
+    private WebElement newWindowOption;
+
+    @FindBy(xpath = "//*[text()='Message Window']")
+    private WebElement messageWindowOption;
+
 
     // Constructor
     public AlertsWindowPage(WebDriver driver) {
