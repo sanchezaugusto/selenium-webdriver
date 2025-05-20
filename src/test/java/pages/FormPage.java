@@ -76,4 +76,19 @@ public class FormPage {
         PageFactory.initElements(driver, this);
     }
 
+    public void goToFormPage(String baseUrl) {
+        driver.get(baseUrl + "/automation-practice-form");
+    }
+
+    public void fillForm() {
+        nameBox.sendKeys("John");
+        lastNameBox.sendKeys("Doe");
+        emailBox.sendKeys("john123@mail.com");
+        genderCheckBox.click();
+        dateOfBirthBox.clear();
+        dateOfBirthBox.sendKeys("03 May 2025");
+        mobileNumberBox.sendKeys("1234567891");
+
+        submitButton.click();
+    }
 }
