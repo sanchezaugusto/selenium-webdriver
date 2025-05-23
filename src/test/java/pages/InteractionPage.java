@@ -25,6 +25,105 @@ public class InteractionPage {
     @FindBy(xpath = "//*[text()='Dragabble']")
     private WebElement dragableOption;
 
+    // Sortable List Elements
+    @FindBy(id = "sortableList")
+    private WebElement list1;
+
+    @FindBy(css = "#sortableList li:nth-child(1)")
+    private WebElement oneList;
+
+    @FindBy(css = "#sortableList li:nth-child(2)")
+    private WebElement twoList;
+
+    @FindBy(css = "#sortableList li:nth-child(3)")
+    private WebElement threeList;
+
+    @FindBy(css = "#sortableList li:nth-child(4)")
+    private WebElement fourList;
+
+    @FindBy(css = "#sortableList li:nth-child(5)")
+    private WebElement fiveList;
+
+    @FindBy(css = "#sortableList li:nth-child(6)")
+    private WebElement sixList;
+
+    // Sortable Grid Elements
+    @FindBy(id = "sortableGrid")
+    private WebElement grid1;
+
+    @FindBy(css = "#sortableGrid li:nth-child(1)")
+    private WebElement oneGrid;
+
+    @FindBy(css = "#sortableGrid li:nth-child(2)")
+    private WebElement twoGrid;
+
+    @FindBy(css = "#sortableGrid li:nth-child(3)")
+    private WebElement threeGrid;
+
+    @FindBy(css = "#sortableGrid li:nth-child(4)")
+    private WebElement fourGrid;
+
+    @FindBy(css = "#sortableGrid li:nth-child(5)")
+    private WebElement fiveGrid;
+
+    @FindBy(css = "#sortableGrid li:nth-child(6)")
+    private WebElement sixGrid;
+
+    @FindBy(css = "#sortableGrid li:nth-child(7)")
+    private WebElement sevenGrid;
+
+    @FindBy(css = "#sortableGrid li:nth-child(8)")
+    private WebElement eightGrid;
+
+    @FindBy(css = "#sortableGrid li:nth-child(9)")
+    private WebElement nineGrid;
+
+    // Selectable List Elements
+    @FindBy(id = "selectableList")
+    private WebElement list2;
+
+    @FindBy(css = "#selectableList li:nth-child(1)")
+    private WebElement element1;
+
+    @FindBy(css = "#selectableList li:nth-child(2)")
+    private WebElement element2;
+
+    @FindBy(css = "#selectableList li:nth-child(3)")
+    private WebElement element3;
+
+    @FindBy(css = "#selectableList li:nth-child(4)")
+    private WebElement element4;
+
+    // Selectable Grid Elements
+    @FindBy(id = "selectableGrid")
+    private WebElement grid2;
+
+    @FindBy(css = "#selectableGrid li:nth-child(1)")
+    private WebElement oneGrid2;
+
+    @FindBy(css = "#selectableGrid li:nth-child(2)")
+    private WebElement twoGrid2;
+
+    @FindBy(css = "#selectableGrid li:nth-child(3)")
+    private WebElement threeGrid2;
+
+    @FindBy(css = "#selectableGrid li:nth-child(4)")
+    private WebElement fourGrid2;
+
+    @FindBy(css = "#selectableGrid li:nth-child(5)")
+    private WebElement fiveGrid2;
+
+    @FindBy(css = "#selectableGrid li:nth-child(6)")
+    private WebElement sixGrid2;
+
+    @FindBy(css = "#selectableGrid li:nth-child(7)")
+    private WebElement sevenGrid2;
+
+    @FindBy(css = "#selectableGrid li:nth-child(8)")
+    private WebElement eightGrid2;
+
+    @FindBy(css = "#selectableGrid li:nth-child(9)")
+    private WebElement nineGrid2;
 
     // Draggable Options Tabs
     @FindBy(id = "draggableExample-tab-simple")
