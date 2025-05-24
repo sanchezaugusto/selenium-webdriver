@@ -42,6 +42,6 @@ public class WidgetPage {
     }
 
     public void goTo() {
-        driver.get("https://your-base-url.com/widgets"); // Reemplaza con tu BASE_URL real
+        driver.get("https://your-base-url.com/widgets");
     }
 }

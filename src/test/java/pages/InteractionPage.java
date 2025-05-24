@@ -176,6 +176,6 @@ public class InteractionPage {
     }
 
     public void goTo() {
-        driver.get("https://your-base-url.com/interaction"); // Reemplaza con BASE_URL real
+        driver.get("https://your-base-url.com/interaction");
     }
 }
