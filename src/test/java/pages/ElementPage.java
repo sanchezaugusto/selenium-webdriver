@@ -88,7 +88,6 @@ public class ElementPage {
         PageFactory.initElements(driver, this);
     }
 
-    /** Navega a la pestaña Elements */
     public void gotoElements() {
         driver.get(BASE_URL + "/elements");
     }
