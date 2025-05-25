@@ -5,9 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-/**
- * HomePage class for Selenium using @FindBy annotations.
- */
 public class HomePage {
 
     private WebDriver driver;
@@ -42,35 +39,5 @@ public class HomePage {
 
     public void goTo() {
         driver.get(BASE_URL);
-    }
-
-    // Puedes agregar getters si necesitas acceder a los elementos desde los tests
-
-    public WebElement getTitle() {
-        return title;
-    }
-
-    public WebElement getElementsCard() {
-        return elementsCard;
-    }
-
-    public WebElement getFormsCard() {
-        return formsCard;
-    }
-
-    public WebElement getAlertsFramesCard() {
-        return alertsFramesCard;
-    }
-
-    public WebElement getWidgetsCard() {
-        return widgetsCard;
-    }
-
-    public WebElement getInteractionsCard() {
-        return interactionsCard;
-    }
-
-    public WebElement getBookStoreCard() {
-        return bookStoreCard;
     }
 }
