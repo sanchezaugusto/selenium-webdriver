@@ -4,20 +4,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pages.ElementPage;
+import pages.InteractionPage;
 
 public class InteractionTest {
 
     private WebDriver driver;
-    private ElementPage elementPage;
+    private InteractionPage interactionPage;
 
     @BeforeMethod
     public void setUp() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        elementPage = new ElementPage(driver);
-        elementPage.gotoElements();
-        elementPage.clickTextBoxOption();
+        interactionPage = new InteractionPage(driver);
+        interactionPage.goTo();
     }
 
     @Test
